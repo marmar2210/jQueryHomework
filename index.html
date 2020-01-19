@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Crystal Game</title>
+
+    <style>
+      #gems {
+        float: left;
+        margin-left: 50px;
+        width: 100%;
+      }
+
+      img {
+        width: 230px;
+        padding: 5px;
+      }
+
+      img:hover {
+        opacity: 0.8;
+      }
+
+      .score {
+        clear: left;
+        padding-top: 5px;
+      }
+
+      body {
+        background-image: url("assets/images/crystalbackgroundbetter.jpg");
+      }
+
+      h1 {
+        color: rgba(2, 58, 122, 0.986);
+        text-align: center;
+      }
+
+      h4 {
+        color: rgba(2, 58, 122, 0.986);
+        text-align: center;
+      }
+
+      p {
+        color: rgba(2, 58, 122, 0.986);
+        font-weight: bold;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    ></script>
+
+    <h1>Welcome to the Crystal Game!</h1>
+
+    <h4>
+      Each crystal has a hidden value. Click on the crystals to add to your
+      collection. Try to meet the given number. Refresh the page to clear the
+      score, may the Force be with you.
+    </h4>
+
+    <div id="gems">
+      <img class="gem" id="crystal1" src="assets/images/crystal 1.png" />
+      <img class="gem" id="crystal2" src="assets/images/crystal 2.png" />
+      <img class="gem" id="crystal3" src="assets/images/crystal 3.png" />
+      <img class="gem" id="crystal4" src="assets/images/crystal 4.png" />
+    </div>
+
+    <br />
+
+    <div class="score">
+      <p id="computerScore">Number to meet:</p>
+      <p id="crystalScore">Your collection:</p>
+      <p id="wins">Wins:</p>
+      <p id="losses">Losses:</p>
+    </div>
+
+    <script src="assets/javascript/game.js"></script>
+  </body>
+</html>
